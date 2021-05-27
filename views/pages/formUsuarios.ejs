@@ -1,0 +1,57 @@
+<%- include('../partials/header.ejs'); %>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Faça parte da nossa rede!</h1>
+                <form class="p-md-4 border border-success" action="/usuarios/cadastrarUsuarios" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" name="nome" id="nome">
+                    </div>
+                    <span id="alertNome" class="alert alert-danger" style="display: none;">Digite um nome</span>
+
+                    <div class="form-group">
+                        <label for="nome">Como gostaria de ser chamado?</label>
+                        <input type="text" class="form-control" name="apelido" id="apelido">
+                    </div>
+                    <span id="alertapelido" class="alert alert-danger" style="display: none;">Digite um apelido ou seu nome, se preferir</span>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" name="email" id="email">
+                    </div>
+                    <span id="alertemail" class="alert alert-danger" style="display: none;">Digite um email válido</span>
+                    
+                    <div class="form-group">
+                        <label for="hobbies">Hobbies</label>
+                        <input type="text" class="form-control" name="hobbies" id="hobbies">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="educacao">Educação</label>
+                        <input type="text" class="form-control" name="educacao" id="educacao">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="trabalho">Trabalho</label>
+                        <input type="text" class="form-control" name="trabalho" id="trabalho">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="post">Example textarea</label>
+                        <textarea class="form-control" id="post" rows="3" name="postagem"></textarea>
+                      </div>
+
+                    <div class="text-center w-100">
+                        <button type="submit" class=" w-25 btn btn-secondary">Cadastrar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('../partials/footer.ejs'); %>
