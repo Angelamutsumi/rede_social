@@ -50,17 +50,16 @@
                         <textarea class="form-control" id="post" rows="3" name="postagem"></textarea>
                     </div>
 
-                    <div class="text-center w-100">
-
-                        <div class="text-center">
+                    <div class="text-center w-100 d-flex">
+                        <div class="text-center mx-auto">
                             <input type="hidden" name="id" value="<%=usuario._id %>" />
-                            <button type="submit" class="btn btn-primary">EDITARrrr</button>
+                            <button type="submit" class="btn btn-outline-primary">Editar</button>
                         </div>  
 
-                        <div class="text-center">
+                        <div class="text-center mx-auto">
                             <input type="hidden" name="id" value="<%= usuario._id %>" />
                             <a href="/usuarios/deletarUsuarios/<%= usuario._id %>"
-                                class="btn btn-outline-danger">EXCLUIR</a>
+                                class="btn btn-outline-danger">Excluir</a>
                         </div>  
                     </div>
                 </form>

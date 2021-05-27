@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+    color: #5a189a;
+}
+.btn{
+    width: 10em;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #f6effa;
+}
+.nav-item{
+    width: 10em;
+}
+.nav-link{
+    color: #5a189a;
+}
+.nav-link:hover{
+    color: #5a189a;
+    font-weight: bold;
+}
+#btnSearch{
+    background-color: #f6effa;
+    border: 1px solid #5a189a;;
+    color: #5a189a;
+}
+#btnSearch:hover{
+    font-weight: bold;
+}
+
+/* Usuários */
+#cadastrados{
+    font-size: 18px;
+    margin:  5% 2%;
+}
+#linkNome{
+    color: #5a189a;
+    font-size: 18px;
+    text-decoration: none;
+}
+#linkNome:hover{
+    color: #5a189a;
+    font-weight: bold;    
+}
+
+/* Posts */
+#nomePost{
+    color: #5a189a;
+}
+#post{
+    background-color: #f6effa;
+    margin: 2em;
+    padding: 2em;
+}
+#postsDiv span{
+    text-align: justify;
+    word-wrap:break-word;
+}
+

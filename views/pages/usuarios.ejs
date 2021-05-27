@@ -3,23 +3,28 @@
 <main>
     <div class="container">
         <div class="row mt-5">
-            <div class="col-4">
-                <h2>Usuários</h2>
+            <div class="col-4 border m-md-3 p-md-3" id='usuariosDiv'>
+                <h3 class="my-md-2">USUÁRIOS</h3>
                 <!-- lista de usuarios - apelidos-->
-                <table class="table table-sm table-hover">
-                    <tbody>
-                        <% usuarios.forEach(function(usuario){ %>
-                            <tr>
-                                <td><a href="/usuarios/editarUsuarios/<%= usuario._id %>"><%= usuario.nome %></a></td>
-                            </tr>
-                        <% }) %>  
-                    </tbody>
-                </table>
+                <div >                    
+                    <% usuarios.forEach(function(usuario){ %>
+                        <div id="cadastrados">
+                            <a  id='linkNome' href="/usuarios/editarUsuarios/<%= usuario._id %>"><%= usuario.nome %></a>
+                        </div>
+                    <% }) %>                     
+                </div>
             </div>
-            <div class="col-8">
-                <h2>Posts</h2>
+            <div class="col-7 border m-md-3 p-md-3">
+                <h3 class="my-md-2">POSTS</h3>
                 <!-- lista de publicações apelido e posts-->
-
+                <div id="postsDiv">
+                    <% usuarios.forEach(function(usuario){ %>   
+                        <div id="post">
+                            <div id="nomePost"><%= usuario.nome %><br /></div> 
+                            <span><%= usuario.postagem %><br /></span> 
+                        </div>                         
+                    <% }) %>
+                </div>
             </div>
         </div>
            

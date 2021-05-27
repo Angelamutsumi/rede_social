@@ -46,7 +46,6 @@ exports.editar_usuarios_get = (req, res)=>{
             return res.status(500).send('Erro ao consultar usuário');
         }
         res.render('../views/pages/formEditarUsuarios.ejs', {usuario:usuario});
-        console.log(usuario);
     });
 }
 
