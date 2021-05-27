@@ -1,0 +1,72 @@
+<%- include('../partials/header.ejs'); %>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Você já participa da nossa rede!</h1>
+                <form class="p-md-4 border border-success" action="/usuarios/editarUsuarios" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" name="nome" id="nome" value="<%= usuario.nome %>">
+                    </div>
+                    <span id="alertNome" class="alert alert-danger" style="display: none;">Digite um nome</span>
+
+                    <div class="form-group">
+                        <label for="nome">Como gostaria de ser chamado?</label>
+                        <input type="text" class="form-control" name="apelido" id="apelido"
+                            value="<%= usuario.apelido %>">
+                    </div>
+                    <span id="alertapelido" class="alert alert-danger" style="display: none;">Digite um apelido ou seu
+                        nome, se preferir</span>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" name="email" id="email" value="<%= usuario.email %>">
+                    </div>
+                    <span id="alertemail" class="alert alert-danger" style="display: none;">Digite um email
+                        válido</span>
+
+                    <div class="form-group">
+                        <label for="hobbies">Hobbies</label>
+                        <input type="text" class="form-control" name="hobbies" id="hobbies"
+                            value="<%= usuario.hobbies %>">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="educacao">Educação</label>
+                        <input type="text" class="form-control" name="educacao" id="educacao"
+                            value="<%= usuario.educacao %>">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="trabalho">Trabalho</label>
+                        <input type="text" class="form-control" name="trabalho" id="trabalho"
+                            value="<%= usuario.trabalho %>">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="post">Escreva seu post aqui</label>
+                        <textarea class="form-control" id="post" rows="3" name="postagem"></textarea>
+                    </div>
+
+                    <div class="text-center w-100">
+
+                        <div class="text-center">
+                            <input type="hidden" name="id" value="<%=usuario._id %>" />
+                            <button type="submit" class="btn btn-primary">EDITARrrr</button>
+                        </div>  
+
+                        <div class="text-center">
+                            <input type="hidden" name="id" value="<%= usuario._id %>" />
+                            <a href="/usuarios/deletarUsuarios/<%= usuario._id %>"
+                                class="btn btn-outline-danger">EXCLUIR</a>
+                        </div>  
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('../partials/footer.ejs'); %>
