@@ -20,5 +20,9 @@ app.use('/usuarios', usuarios_router);
 
 //Rota principal
 app.get('/', (req, res)=>{
-    res.render('pages/')
+    res.render('pages/usuarios')
+});
+
+app.listen(port, ()=>{
+    console.log('Servidor rodando na porta 3000');
 })
