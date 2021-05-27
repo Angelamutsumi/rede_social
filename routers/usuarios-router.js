@@ -11,6 +11,9 @@ router.get('/', usuariosController.listar_usuarios);
 //Rota q exibe o form de cadastro
 router.get('/cadastrarUsuarios', usuariosController.cadastrar_usuarios_get);
 
+//Rota para cadastrar usuarios
+router.post('/cadastrarUsuarios', usuariosController.cadastrar_usuarios_post);
+
 
 
 module.exports = router;

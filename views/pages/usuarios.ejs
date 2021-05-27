@@ -1,5 +1,30 @@
 <%- include('../partials/header.ejs'); %>
 
+<main>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-4">
+                <h2>Usuários</h2>
+                <!-- lista de usuarios - apelidos-->
+                <table class="table table-sm table-hover">
+                    <tbody>
+                        <% usuarios.forEach(function(usuario){ %>
+                            <tr>
+                                <td><a href="/usuario/editarUsuario/<%= usuario._id %>"><%= usuario.nome %></a></td>
+                            </tr>
+                        <% }) %>  
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-8">
+                <h2>Posts</h2>
+                <!-- lista de publicações apelido e posts-->
+
+            </div>
+        </div>
+           
+    </div>
+</main>
 
 
 
