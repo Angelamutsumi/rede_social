@@ -4,8 +4,8 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1>Você já participa da nossa rede!</h1>
-                <form class="p-md-4 border border-success" action="/usuarios/editarUsuarios" method="POST">
+                <h3 class="my-md-5 mx-md-5">Você já participa da nossa rede!</h3>
+                <form class="p-md-4 border w-75 mx-md-auto mb-md-5" action="/usuarios/editarUsuarios" method="POST">
                     <div class="form-group">
                         <label for="nome">Nome</label>
                         <input type="text" class="form-control" name="nome" id="nome" value="<%= usuario.nome %>">
@@ -47,13 +47,13 @@
 
                     <div class="form-group">
                         <label for="post">Escreva seu post aqui</label>
-                        <textarea class="form-control" id="post" rows="3" name="postagem"></textarea>
+                        <textarea class="form-control m-md-auto" id="post" rows="3" name="postagem"></textarea>
                     </div>
 
                     <div class="text-center w-100 d-flex">
                         <div class="text-center mx-auto">
                             <input type="hidden" name="id" value="<%=usuario._id %>" />
-                            <button type="submit" class="btn btn-outline-primary">Editar</button>
+                            <button type="submit" class="btn" id="btn">Editar</button>
                         </div>  
 
                         <div class="text-center mx-auto">

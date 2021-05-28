@@ -64,3 +64,22 @@ h3{
     word-wrap:break-word;
 }
 
+/* Cadastro */
+textarea{
+    margin: 0;
+    padding: 0;
+}
+#btn{
+    background-color: #f6effa;
+    border: 1px solid #5a189a;
+    color: #5a189a;
+}
+#btn:hover{
+    background-color: #5a189a;
+    color: #f6effa;
+}
+
+form{
+    background-color: #f6effa;
+}
+

@@ -4,8 +4,8 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1>Faça parte da nossa rede!</h1>
-                <form class="p-md-4 border border-success" action="/usuarios/cadastrarUsuarios" method="POST">
+                <h3 class="my-md-5 mx-md-5">Faça parte da nossa rede!</h3>
+                <form class="p-md-4 border w-75 mx-md-auto" action="/usuarios/cadastrarUsuarios" method="POST">
                     <div class="form-group">
                         <label for="nome">Nome</label>
                         <input type="text" class="form-control" name="nome" id="nome">
@@ -22,8 +22,8 @@
                         <label for="email">Email</label>
                         <input type="text" class="form-control" name="email" id="email">
                     </div>
-                    <span id="alertemail" class="alert alert-danger" style="display: none;">Digite um email válido</span>
-                    
+                    <span id="alertemail" class="alert alert-danger" style="display: none;">Digite um email válido</span>          
+
                     <div class="form-group">
                         <label for="hobbies">Hobbies</label>
                         <input type="text" class="form-control" name="hobbies" id="hobbies">
@@ -40,12 +40,12 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="post">Escreva seu post aqui</label>
-                        <textarea class="form-control" id="post" rows="3" name="postagem"></textarea>
+                        <label for="postagem">Escreva seu post aqui</label>
+                        <textarea class="form-control" id="postagem" rows="3" name="postagem"></textarea>
                       </div>
 
                     <div class="text-center w-100">
-                        <button type="submit" class=" w-25 btn btn-secondary">Cadastrar</button>
+                        <button type="submit" class=" w-25 btn btn-secondary" id="btn">Cadastrar</button>
                     </div>
 
                 </form>
