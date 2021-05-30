@@ -1,6 +1,31 @@
 const Usuarios = require('../models/usuarios-model');
 
 //Validação
+const validateEmail = (email) => {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  };
+
+function validaUsuario(form){
+    let err = {};
+    if(form.nome == "" || form.nome.length < 2){
+        err["nome"] = "Erro no campo nome";
+    }
+   
+    if(form.email == "" || validateEmail(form.email) == false){
+        err["email"] = "Erro no campo email";
+    }  
+   
+    if(form.postagem == "" || form.postagem.length < 2){
+        err["postagem"] = "Erro no campo postagem";
+    }
+
+    return err;
+}
+
+function isEmpty(obj) {
+    return Object.keys(obj).length === 0;
+}
 
 //Função para listar os usuários do BD
 exports.listar_usuarios = (req, res)=>{
@@ -13,16 +38,20 @@ exports.listar_usuarios = (req, res)=>{
 }
 
 //Função para exibir o form de cadastro dos usuarios
-exports.cadastrar_usuarios_get = (req, res)=>{
+exports.cadastrar_usuarios_get = (req, res, next)=>{
     res.render('pages/formUsuarios');
 }
 
 //Função para salvar usuários
 exports.cadastrar_usuarios_post = (req, res)=>{
+    let err = validaUsuario(req.body);
     console.log(req.body);
-    
-    //Incluir validação
 
+    if(!isEmpty(err)){
+        console.log(err);
+        return res.status(500).send("Algo deu errado, preencha o cadastro novamente")
+    }
+        
     let usuario = new Usuarios();
     usuario.nome = req.body.nome
     usuario.apelido = req.body.apelido
@@ -82,3 +111,8 @@ exports.deletar_usuarios = (req, res)=>{
         res.redirect('/usuarios');
     });
 }
+
+
+
+
+

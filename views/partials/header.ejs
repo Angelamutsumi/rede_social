@@ -37,9 +37,10 @@
         </li>
 
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="my-2 my-sm-0 p-md-1" id='btnSearch' type="submit"> BUSCAR USUÁRIO </button>
+      <form class="form-inline my-2 my-lg-0" action="/usuarios/procurarUsuarios" method="POST">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search" name= 'search'>
+        <!-- <button class="my-2 my-sm-0 p-md-1" id='btnSearch' type="submit" onclick="/procurarUsuarios">BUSCAR USUÁRIO </button> -->
+        <a href="usuarios/procurarUsuarios" class="my-2 my-sm-0 p-md-1" id='btnSearch'  >BUSCAR USUARIOS</a>
       </form>
     </div>
   </nav>

@@ -23,4 +23,6 @@ router.post('/editarUsuarios', usuariosController.editar_usuarios_post);
 //Rota para deletar usuário
 router.get('/deletarUsuarios/:id', usuariosController.deletar_usuarios);
 
+
+
 module.exports = router;
