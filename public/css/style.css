@@ -5,8 +5,8 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-h3{
-    color: #5a189a;
+h5{
+    color: #200056;
 }
 .btn{
     width: 10em;
@@ -20,39 +20,47 @@ h3{
     width: 10em;
 }
 .nav-link{
-    color: #5a189a;
+    color: #200056;
 }
 .nav-link:hover{
-    color: #5a189a;
+    color: #200056;
     font-weight: bold;
 }
 #btnSearch{
     background-color: #f6effa;
-    border: 1px solid #5a189a;;
-    color: #5a189a;
+    border: 1px solid #200056;;
+    color: #200056;
+    font-size: 0.9em;
+    
 }
 #btnSearch:hover{
     font-weight: bold;
 }
+#logo{
+    color: #ff5400;
+}
 
 /* Usuários */
+.anuncios img{
+    height: 20em;
+}
 #cadastrados{
     font-size: 18px;
     margin:  5% 2%;
 }
 #linkNome{
-    color: #5a189a;
+    color: #200056;
     font-size: 18px;
     text-decoration: none;
 }
 #linkNome:hover{
-    color: #5a189a;
+    color: #200056;
     font-weight: bold;    
 }
 
 /* Posts */
 #nomePost{
-    color: #5a189a;
+    color: #200056;
 }
 #post{
     background-color: #f6effa;
@@ -71,11 +79,11 @@ textarea{
 }
 #btn{
     background-color: #f6effa;
-    border: 1px solid #5a189a;
-    color: #5a189a;
+    border: 1px solid #200056;
+    color: #200056;
 }
 #btn:hover{
-    background-color: #5a189a;
+    background-color: #200056;
     color: #f6effa;
 }
 
