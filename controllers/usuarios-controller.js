@@ -46,6 +46,7 @@ exports.cadastrar_usuarios_get = (req, res, next)=>{
 exports.cadastrar_usuarios_post = (req, res)=>{
     let err = validaUsuario(req.body);
     console.log(req.body);
+    console.log(req.file);
 
     if(!isEmpty(err)){
         console.log(err);
@@ -60,6 +61,7 @@ exports.cadastrar_usuarios_post = (req, res)=>{
     usuario.educacao = req.body.educacao
     usuario.trabalho = req.body.trabalho
     usuario.postagem = req.body.postagem
+    usuario.filename= req.file.filename
     usuario.save(err=>{
         if(err){
             return res.status(500).send('Erro ao cadastrar usuário');
@@ -81,6 +83,8 @@ exports.editar_usuarios_get = (req, res)=>{
 //Função para salva a edição do usuário
 exports.editar_usuarios_post = (req, res)=>{
     console.log(id=req.body.id);
+    console.log(req.file);
+    
     Usuarios.findById(id, (err, usuario)=>{
         if(err){
             return res.status(500).send('Erro ao consultar usuário');
@@ -92,6 +96,7 @@ exports.editar_usuarios_post = (req, res)=>{
         usuario.educacao = req.body.educacao
         usuario.trabalho = req.body.trabalho
         usuario.postagem = req.body.postagem
+        usuario.filename= req.file.filename
         usuario.save(err=>{
             if(err){
                 return res.status(500).sen('Erro ao salvar alteração');

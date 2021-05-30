@@ -7,7 +7,8 @@ const Usuarios = mongoose.model('usuarios', {
     hobbies: String,
     educacao: String,
     trabalho: String,
-    postagem: String
+    postagem: String,
+    filename: String
 });
 
 module.exports = Usuarios;

@@ -4,24 +4,25 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-2 border m-md-3 p-md-3" id='usuariosDiv'>
-                <h5 class="my-md-2">Usuários</h5>
+                <h5 class="my-md-2 text-right">Usuários</h5>
                 <!-- lista de usuarios - apelidos-->
                 <div >                    
                     <% usuarios.forEach(function(usuario){ %>
                         <div id="cadastrados">
-                            <a  id='linkNome' href="/usuarios/editarUsuarios/<%= usuario._id %>"><%= usuario.nome %></a>
+                            <a  id='linkNome'  class="text-uppercase" href="/usuarios/editarUsuarios/<%= usuario._id %>"><%= usuario.nome %></a>
                         </div>
                     <% }) %>                     
                 </div>
             </div>
             <div class="col-6 border m-md-3 p-md-3">
-                <h5 class="my-md-2">Posts</h5>
+                <h5 class="my-md-2 text-center">Posts</h5>
                 <!-- lista de publicações apelido e posts-->
                 <div id="postsDiv">
                     <% usuarios.forEach(function(usuario){ %>   
                         <div id="post">
-                            <div id="nomePost"><%= usuario.apelido %><br /></div> 
-                            <span><%= usuario.postagem %><br /></span> 
+                          <img src="/tmp/uploads/<%=usuario.filename%>" alt="" id="postImg">                          
+                          <div id="nomePost"><%= usuario.apelido %><br /></div> 
+                          <span><%= usuario.postagem %><br /></span> 
                         </div>                         
                     <% }) %>
                 </div>
@@ -29,7 +30,7 @@
             <div class="col-3 border m-md-3 p-md-3">
                 <h5 class="my-md-2">Patrocinado</h5>
                 <!-- lista de patrocinadores, só fotos e nomes-->
-                <div class="anuncios mt-md-3">
+                <div class="anuncios mt-md-4">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -52,7 +53,10 @@
                         </a>
                       </div>                      
                 </div>
-                <div class="anuncios mt-md-3">
+                <div class="mt-md-4">
+                  <img src="img/shoes2.png" alt="camiseta" class="imgAnuncio">
+                </div>
+                <div class="anuncios mt-md-4">
                     <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -75,7 +79,10 @@
                         </a>
                       </div>
                 </div>
-                <div class="anuncios mt-md-3">
+                <div class="mt-md-4">
+                  <img src="img/oculos2.jpg" alt="óculos" class="imgAnuncio">
+                </div>
+                <div class="anuncios mt-md-4">
                     <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">

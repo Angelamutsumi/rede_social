@@ -42,15 +42,21 @@ h5{
 
 /* Usuários */
 .anuncios img{
-    height: 20em;
+    height: 18em;
+    width: 15em;
 }
 #cadastrados{
     font-size: 18px;
     margin:  5% 2%;
+    text-align: right;
+}
+.imgAnuncio{
+    height: 100%;
+    width: 100%;
 }
 #linkNome{
     color: #200056;
-    font-size: 18px;
+    font-size: 15px;
     text-decoration: none;
 }
 #linkNome:hover{
@@ -60,7 +66,8 @@ h5{
 
 /* Posts */
 #nomePost{
-    color: #200056;
+    color: #ff5400;
+    margin-top: 1%;
 }
 #post{
     background-color: #f6effa;
@@ -70,6 +77,10 @@ h5{
 #postsDiv span{
     text-align: justify;
     word-wrap:break-word;
+}
+#postImg{   
+    margin: 0%, 2% 0% 5%;
+    width: 37em;
 }
 
 /* Cadastro */
