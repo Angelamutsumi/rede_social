@@ -1,6 +1,6 @@
 <h1 align='center'> Rede social para corredores</h1>
 
-<img src="https://github.com/Angelamutsumi/rede_social.git/public/img/siteSoulRunners.png">
+<img src="https://github.com/Angelamutsumi/rede_social/blob/main/public/img/siteSoulRunners.png">
 
 ## Descrição
 
