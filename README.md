@@ -22,12 +22,13 @@ No terminal, clone o projeto:
 * [EJS](https://ejs.co/)
 * [CSS](https://www.w3schools.com/)
 * [Javascript](https://www.w3schools.com/)
-* [Bootstrap](https://getbootstrap.com/)
-* [Node.js](https://nodejs.org/en/)
-* [Express.js](https://expressjs.com/)
-* [Mongoose](https://mongoosejs.com/)
-* [Morgan](https://www.npmjs.com/package/morgan)
-* [Multer](https://www.npmjs.com/package/multer)
+* [Bootstrap](https://getbootstrap.com/) - Framework para estilização de frontend.
+* [Node.js](https://nodejs.org/en/) - Plataforma de aplicação, na qual você escreve seus programas com Javascript que serão compilados, otimizados e interpretados pela máquina virtual V8.  processo híbrido é entregue como código de máquina server-side, tornando o Node.js muito eficiente na sua execução e consumo de recursos.
+* [Express.js](https://expressjs.com/) - Framework que auxilia com o sistema de rotas, o tratamento de exceções dentro da aplicação, permite a integração de vários sistemas de templates e gerencia diferentes requisições HTTP.
+* [Mongoose](https://mongoosejs.com/) - Modelagem de objeto MongoDB para Node.js.
+* [Morgan](https://www.npmjs.com/package/morgan) - Middleware de logger de solicitação de HTTP para node.js.
+* [Multer](https://www.npmjs.com/package/multer) - Middleware node.js para para upload de arquivos.
+* [MongoDB - Atlas](https://www.mongodb.com/cloud/atlas) - Banco de dados - cloud.
 
 
 
